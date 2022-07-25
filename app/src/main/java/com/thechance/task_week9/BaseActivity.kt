@@ -16,6 +16,7 @@ abstract class BaseActivity<VB : ViewBinding> : AppCompatActivity() {
         get() = _binding as VB
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        setTheme(R.style.Theme_Task_week9)
         super.onCreate(savedInstanceState)
         _binding = bindingInflater(layoutInflater)
         setContentView(binding.root)
