@@ -9,8 +9,15 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     override val bindingInflater: (LayoutInflater) -> FragmentHomeBinding =
         FragmentHomeBinding::inflate
 
+
+    lateinit var adapter: HomeAdapter
+
     override fun setup() {
-
+        val itemsList: MutableList<HomeItem<Any>> = mutableListOf()
+        itemsList.addAll(
+            DataSource.getPosts().map { it.toHomeItem() }
+        )
+        adapter = HomeAdapter(itemsList)
+        binding.recyclerHome.adapter = adapter
     }
-
 }
