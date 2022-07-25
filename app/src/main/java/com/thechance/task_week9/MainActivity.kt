@@ -12,7 +12,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
         ActivityMainBinding::inflate
 
     override fun setup() {
-
+        replaceFragment(homeFragment)
     }
 
     private fun replaceFragment(fragment: Fragment) {
