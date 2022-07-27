@@ -3,11 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/trans/Downloads/android_projects/task_week9/app/src/main/res/drawable/colorful_gredient_circle.xml" value="0.168" />
+        <entry key="..\:/Users/trans/Downloads/android_projects/task_week9/app/src/main/res/drawable/ic_add_things.xml" value="0.168" />
+        <entry key="..\:/Users/trans/Downloads/android_projects/task_week9/app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.168" />
+        <entry key="..\:/Users/trans/Downloads/android_projects/task_week9/app/src/main/res/drawable/ic_baseline_insert_comment_24.xml" value="0.168" />
+        <entry key="..\:/Users/trans/Downloads/android_projects/task_week9/app/src/main/res/drawable/ic_baseline_save_24.xml" value="0.168" />
+        <entry key="..\:/Users/trans/Downloads/android_projects/task_week9/app/src/main/res/drawable/ic_baseline_send_24.xml" value="0.168" />
+        <entry key="..\:/Users/trans/Downloads/android_projects/task_week9/app/src/main/res/drawable/ic_comment.xml" value="0.168" />
+        <entry key="..\:/Users/trans/Downloads/android_projects/task_week9/app/src/main/res/drawable/ic_love.xml" value="0.168" />
+        <entry key="..\:/Users/trans/Downloads/android_projects/task_week9/app/src/main/res/drawable/ic_messenger.xml" value="0.168" />
+        <entry key="..\:/Users/trans/Downloads/android_projects/task_week9/app/src/main/res/drawable/ic_save.xml" value="0.168" />
+        <entry key="..\:/Users/trans/Downloads/android_projects/task_week9/app/src/main/res/drawable/ic_send.xml" value="0.168" />
+        <entry key="..\:/Users/trans/Downloads/android_projects/task_week9/app/src/main/res/drawable/ic_splash_icon.xml" value="0.168" />
+        <entry key="..\:/Users/trans/Downloads/android_projects/task_week9/app/src/main/res/drawable/placeholder_background.xml" value="0.168" />
         <entry key="..\:/Users/trans/Downloads/android_projects/task_week9/app/src/main/res/drawable/splash_screen.xml" value="0.154" />
+        <entry key="..\:/Users/trans/Downloads/android_projects/task_week9/app/src/main/res/font/font.xml" value="0.298974358974359" />
         <entry key="..\:/Users/trans/Downloads/android_projects/task_week9/app/src/main/res/layout/activity_main.xml" value="0.259375" />
-        <entry key="..\:/Users/trans/Downloads/android_projects/task_week9/app/src/main/res/layout/fragment_home.xml" value="0.27239583333333334" />
+        <entry key="..\:/Users/trans/Downloads/android_projects/task_week9/app/src/main/res/layout/fragment_home.xml" value="0.264" />
         <entry key="..\:/Users/trans/Downloads/android_projects/task_week9/app/src/main/res/layout/item_post.xml" value="0.264" />
-        <entry key="..\:/Users/trans/Downloads/android_projects/task_week9/app/src/main/res/layout/item_stories_list.xml" value="0.27239583333333334" />
+        <entry key="..\:/Users/trans/Downloads/android_projects/task_week9/app/src/main/res/layout/item_stories_list.xml" value="0.2" />
+        <entry key="..\:/Users/trans/Downloads/android_projects/task_week9/app/src/main/res/layout/item_story.xml" value="0.27239583333333334" />
       </map>
     </option>
   </component>

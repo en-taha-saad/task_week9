@@ -1,5 +1,8 @@
-
 <resources>
     <string name="app_name">instagram</string>
-    <string name="user_name">Taha Saad</string>
+    <string name="vertical_ellipsis">&#8942;</string>
+
+    <string name="user_name">Jerry</string>
+    <string name="image_content">imageContent</string>
+    <string name="instgram">Instgram</string>
 </resources>

@@ -10,7 +10,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/black">
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/image_profile"
@@ -18,21 +19,41 @@
             android:layout_height="48dp"
             android:layout_margin="8dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/person_image"
+            android:src="@drawable/instagram"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:shapeAppearance="@style/circleImageView" />
 
         <TextView
             android:id="@+id/text_username"
-            style="@style/SingleLineText.Primary"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+
             android:layout_marginStart="8dp"
+            android:layout_marginTop="6dp"
             android:text="@string/user_name"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/threeDots"
             app:layout_constraintStart_toEndOf="@+id/image_profile"
             app:layout_constraintTop_toTopOf="@+id/image_profile" />
+
+        <TextView
+            android:id="@+id/threeDots"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/vertical_ellipsis"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_username"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_username" />
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/image_post"
@@ -40,13 +61,111 @@
             android:layout_height="300dp"
             android:layout_marginTop="8dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/person_image"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/instagram"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/image_profile"
             app:layout_constraintVertical_bias="1.0" />
 
+        <ImageView
+            android:id="@+id/love_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:contentDescription="@string/image_content"
+            android:focusable="true"
+            android:src="@drawable/ic_love"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_post" />
+
+        <ImageView
+            android:id="@+id/comment_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:clickable="true"
+            android:contentDescription="@string/image_content"
+            android:focusable="true"
+            android:src="@drawable/ic_comment"
+            app:layout_constraintStart_toEndOf="@+id/love_icon"
+            app:layout_constraintTop_toBottomOf="@+id/love_icon"
+            app:layout_constraintTop_toTopOf="@+id/love_icon" />
+
+        <ImageView
+            android:id="@+id/send_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:clickable="true"
+            android:contentDescription="@string/image_content"
+            android:focusable="true"
+            android:src="@drawable/ic_send"
+            app:layout_constraintStart_toEndOf="@+id/comment_icon"
+            app:layout_constraintTop_toBottomOf="@+id/comment_icon"
+            app:layout_constraintTop_toTopOf="@+id/comment_icon" />
+
+        <ImageView
+            android:id="@+id/save_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+
+            android:layout_marginEnd="8dp"
+            android:clickable="true"
+            android:contentDescription="@string/image_content"
+            android:focusable="true"
+            android:src="@drawable/ic_save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/comment_icon"
+            app:layout_constraintTop_toTopOf="@+id/comment_icon" />
+
+        <TextView
+            android:id="@+id/likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="35 likes"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/love_icon"
+            app:layout_constraintTop_toBottomOf="@+id/love_icon" />
+
+
+        <TextView
+            android:id="@+id/text_username2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/user_name"
+
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/likes"
+            app:layout_constraintTop_toBottomOf="@+id/likes" />
+
+        <TextView
+            android:id="@+id/post_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="post description"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_username2"
+            app:layout_constraintStart_toEndOf="@+id/text_username2"
+            app:layout_constraintTop_toTopOf="@+id/text_username2" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:alpha="0.1"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/text_username2" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
